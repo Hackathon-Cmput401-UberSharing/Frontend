@@ -87,8 +87,6 @@ class Signup extends React.Component{
             password:"",
             content:"",
         }
-        console.log(this.props)
-
     }
 
     handleForm = e => {
