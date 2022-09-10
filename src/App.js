@@ -1,5 +1,10 @@
 import './App.css';
+
 import Login from "./components/Login";
+
+import Signup from "./components/Signup";
+import Sessions from "./components/SessionList";
+
 
 import {
   BrowserRouter as Router,
@@ -13,9 +18,12 @@ import {
 function App() {
 
   return (
+
 <Router>
     <Routes>
       <Route exact path="/" element={<Login />} />
+      <Route exact path="/signup" element={<Signup />} />
+        <Route exact path="/index" element={<Sessions />} />
     </Routes>
 </Router>
 
